@@ -1,6 +1,5 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
-import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
@@ -16,7 +15,7 @@ import terser from 'gulp-terser';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/css/main.scss', { sourcemaps: true })
+  return gulp.src('source/css/main.css', { sourcemaps: true })
     .pipe(plumber())
     .pipe(postcss([
       autoprefixer(),
