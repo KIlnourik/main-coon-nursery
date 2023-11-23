@@ -6,3 +6,24 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/mixins.scss";
+
+// Стили блоков
+@import "./blocks/button.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/header.scss";
+@import "./blocks/cats.scss";
+@import "./blocks/categorie.scss";
+@import "./blocks/features.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/reason.scss";
+@import "./blocks/care.scss";
+@import "./blocks/care-item.scss";
+@import "./blocks/crew.scss";
+@import "./blocks/crewmen.scss";
+@import "./blocks/crewman.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/question.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/footer.scss";
