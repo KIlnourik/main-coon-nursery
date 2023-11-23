@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
@@ -15,8 +16,9 @@ import terser from 'gulp-terser';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/css/main.css', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -125,7 +127,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/css/**/*.css', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }

@@ -1,0 +1,8 @@
+// Внешние стили, шрифты
+@import "./vendor/normalize.scss";
+@import "./vendor/fonts.scss";
+
+// Общие блоки
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/mixins.scss";
