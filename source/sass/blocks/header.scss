@@ -1,0 +1,21 @@
+.header {
+  @include display-flex(center, center, center, column);
+  margin: 0;
+  padding: 0 16px;
+}
+
+.header__content {
+  @include display-flex(center, center, center, column);
+}
+
+.header__title {
+  font-family: 'Yeseva One', 'Times New Roman', serif;
+  font-size: 36px;
+}
+
+.header__text {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: $golden-brown;
+  font-size: 14px;
+  line-height: 140%;
+}

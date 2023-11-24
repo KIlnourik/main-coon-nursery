@@ -1,0 +1,20 @@
+.reason {
+  @include display-flex(center, center, center, column);
+  font-size: 14px;
+  line-height: 140%;
+  width: 290px;
+  height: 248px;
+  background-color: $very-dark-grey;
+
+  &:first-child {
+    &::after{
+      @include absolute-element(260px, 218px);
+      background-color: $golden-brown;
+    }
+  }
+}
+
+.reason__text {
+  z-index: 10;
+  width: 200px;
+}

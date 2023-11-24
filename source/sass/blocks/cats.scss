@@ -1,0 +1,9 @@
+.cats__categories {
+  @include list-reset;
+  @include display-flex(center, space-around, center, row);
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+}
+
+

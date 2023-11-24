@@ -1,0 +1,5 @@
+.reasons__list {
+  @include list-reset;
+  @include display-flex(center, center, center, column);
+  gap: 30px;
+}

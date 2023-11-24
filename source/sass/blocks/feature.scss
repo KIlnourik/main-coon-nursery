@@ -1,0 +1,21 @@
+.feature {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.feature__text {
+  padding-left: 15px;
+  display: block;
+  font-family: 'Roboto Light', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+
+  &::before{
+    @include absolute-element(8px, 8px);
+    top: 20px;
+    left: 0;
+    background-color: $golden-brown;
+    border-radius: 50%;
+  }
+}

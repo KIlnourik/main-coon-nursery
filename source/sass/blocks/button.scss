@@ -1,0 +1,9 @@
+.button {
+  @include link-reset;
+  @include display-flex(center,center, center, row);
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 12px;
+  width: 141px;
+  height: 40px;
+  border: 1px solid $golden-brown;
+}

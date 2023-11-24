@@ -1,0 +1,12 @@
+.categorie__link {
+  @include link-reset();
+  display: block;
+}
+
+.categorie__header {
+  color: $very-transparent-white;
+
+  &--active {
+    color: $white;
+  }
+}

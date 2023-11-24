@@ -1,0 +1,9 @@
+.features__wrapper {
+  @include display-flex(center, space-between, center, column);
+}
+
+.features__list {
+  @include list-reset;
+  @include display-flex(left, space-between, start, column);
+
+}
