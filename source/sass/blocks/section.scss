@@ -1,15 +1,18 @@
 .section {
   @include display-flex(center, center, center, column);
   margin: 0;
-  padding: 0 16px;
+  padding: 0 20px;
   min-width: 100%;
   box-sizing: border-box;
   max-width: calc($mobile-view - 32px);
+  box-sizing: border-box;
 }
 
 .section__title {
   font-family: 'Yesseva One', 'Times New Roman', serif;
-  font-size: 28px;
+  font-size: 32px;
+  margin-top: 50px;
+  padding-left: 11px;
 }
 
 .section__text {
